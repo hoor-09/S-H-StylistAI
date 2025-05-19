@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/frontend/css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+  <body>
+
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-[#7C2E3D]">H&S StylistAI</h1>
+        <nav class="space-x-4 text-sm font-semibold">
+          <a href="/frontend/index.html" class="hover:text-[#7C2E3D]">Home</a>
+          <a href="/frontend/how-it-works.html" class="hover:text-[#7C2E3D]">How It Works</a>
+          <a href="/frontend/features.html" class="hover:text-[#7C2E3D]">Features</a>
+          <a href="/frontend/partners.html" class="hover:text-[#7C2E3D]">Partners</a>
+          <a href="/frontend/pricing.html" class="hover:text-[#7C2E3D]">Pricing</a>
+          <a href="/frontend/about.html" class="hover:text-[#7C2E3D]">About</a>
+          <a href="/frontend/app.html" class="hover:text-[#7C2E3D]">Get the App</a>
+          <a href="/frontend/login.html" class="hover:text-[#7C2E3D]">Sign In</a>
+        </nav>
+    </header>
+
+        <div class="container">
+            <div class="form-box login">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="forgot-link">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p>or login with social platforms</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h1>Registration</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                        <i class='bx bxs-envelope' ></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <p>or register with social platforms</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="toggle-box">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Welcome!</h1>
+                    <p>Don't have an account?</p>
+                    <button class="btn register-btn">Register</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="btn login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-[#2D2D2D] text-white py-6 text-center">
+            &copy; 2025 H&S StylistAI. All rights reserved.
+          </footer>                 
+          
+          <!-- Bootstrap Icons CDN (optional, only if used) -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+          
+          <script> 
+                const container = document.querySelector('.container');
+                const registerBtn = document.querySelector('.register-btn');
+                const loginBtn = document.querySelector('.login-btn');
+
+                registerBtn.addEventListener('click', () => {
+                    container.classList.add('active');
+                })
+
+                loginBtn.addEventListener('click', () => {
+                    container.classList.remove('active');
+                })
+          </script>
+          
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H&S StylistAI – Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/output.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .animate-fade-in {
+      animation: fadeIn 1.2s ease-out both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-[#ffffff] text-[#fff]">
+
+  <!-- Responsive Navbar -->
+  <header class="bg-[#7C2E3D] shadow-md p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-[#ffffff]">H&S StylistAI</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-[#989898]">Home</a>
+        <a href="how-it-works.html" class="hover:text-[#989898]">How It Works</a>
+        <a href="features.html" class="hover:text-[#989898]">Features</a>
+        <a href="partners.html" class="hover:text-[#989898]">Partners</a>
+        <a href="pricing.html" class="hover:text-[#989898]">Pricing</a>
+        <a href="about.html" class="hover:text-[#989898]">About</a>
+        <a href="app.html" class="hover:text-[#989898]">Get the App</a>
+        <a href="login.html" class="hover:text-[#989898]">Sign In</a> 
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-[#f9f8f8] text-2xl" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-4 hidden text-sm font-semibold">
+      <a href="/frontend/index.html" class="hover:text-[#989898]">Home</a> <br>
+      <a href="/frontend/how-it-works.html" class="hover:text-[#989898]">How It Works</a> <br>
+      <a href="/frontend/features.html" class="hover:text-[#989898]">Features</a> <br>
+      <a href="/frontend/partners.html" class="hover:text-[#989898]">Partners</a> <br>
+      <a href="/frontend/pricing.html" class="hover:text-[#989898]">Pricing</a> <br>
+      <a href="/frontend/about.html" class="hover:text-[#989898]">About</a> <br>
+      <a href="/frontend/roadmap.html" class="hover:text-[#989898]">Roadmap</a> <br>
+      <a href="/frontend/app.html" class="hover:text-[#989898]">Get the App</a> <br>
+      <a href="/frontend/login.html" class="hover:text-[#989898]">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+
+<!-- Hero Section -->
+<section class="w-full bg-white text-[#2D2D2D] pt-24">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-10">
+
+    <!-- Text Left -->
+    <div class="text-center md:text-left flex-1 z-10 animate-fade-in-text">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        <span class="block animate-slide-in delay-[0ms]">AI Styling.</span>
+        <span class="block animate-slide-in delay-[200ms]">Tailored To You.</span>
+        <span class="block animate-slide-in delay-[400ms]">Effortless Fashion.</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-6 animate-fade-in-text delay-[800ms]">AI That Dresses You.</p>
+      <a href="app.html" class="bg-[#7C2E3D] hover:bg-[#5f1f2e] text-white px-6 py-3 rounded-xl text-sm font-semibold shadow transition animate-fade-in-text delay-[1000ms]">
+        Try the Stylist
+      </a>
+    </div>
+
+    <!-- Image Right -->
+    <div class="flex-1 animate-fade-in">
+      <img src="/frontend/assets/images/hero.jpg" alt="AI Fashion Assistant" class="w-full h-auto rounded-xl shadow-lg transition duration-1000 ease-in-out transform hover:scale-105" />
+    </div>
+  </div>
+</section>
+
+<!-- Animation Styles -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  .animate-slide-in {
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  .delay-\[0ms\] { animation-delay: 0ms; }
+  .delay-\[200ms\] { animation-delay: 200ms; }
+  .delay-\[400ms\] { animation-delay: 400ms; }
+  .delay-\[600ms\] { animation-delay: 600ms; }
+  .delay-\[800ms\] { animation-delay: 800ms; }
+  .delay-\[1000ms\] { animation-delay: 1000ms; }
+</style>
+
+
+  <!-- Feature Highlights -->
+  <section class="py-16 px-6">
+    <h3 class="text-2xl font-semibold text-center text-[#2D2D2D] mb-12">Why H&S StylistAI?</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-[#A4757A] p-6 rounded-2xl shadow text-center" data-aos="fade-up">
+        <div class="text-gray-700 text-3xl mb-3"><i class="fas fa-clipboard-list"></i></div>
+        <h4 class="text-lg font-bold text-gray-700 mb-2">Virtual Closet</h4>
+        <p class="text-sm text-gray-700">Upload your wardrobe to let AI create stylish, mix-and-match outfits from your actual items.</p>
+      </div>
+      <div class="bg-[#E9BEBA] p-6 rounded-2xl shadow text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-gray-700 text-3xl mb-3"><i class="fas fa-robot"></i></div>
+        <h4 class="text-lg font-bold text-gray-700 mb-2">AI Outfit Recommender</h4>
+        <p class="text-sm text-gray-700">Personalized daily looks based on your style, preferences, and current Saudi trends.</p>
+      </div>
+      <div class="bg-[#A4757A] p-6 rounded-2xl shadow text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-gray-700 text-3xl mb-3"><i class="fas fa-store"></i></div>
+        <h4 class="text-lg font-bold text-gray-700 mb-2">Saudi Retailer Integration</h4>
+        <p class="text-sm text-gray-700">Shop locally with ease—direct links to partner brands across KSA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-[#ffffff] py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-[#000000] mb-8">Frequently Asked Questions</h2>
+
+      <div class="space-y-4" data-aos="fade-up">
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            What is H&S Fashion Assistant?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700 ">
+            H&S is an AI-powered personal shopping assistant that recommends outfits based on your wardrobe, style, and budget.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            How does the AI choose outfits for me?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            The AI analyzes your uploaded wardrobe, fit, preferences, and trending data to curate outfits that suit your style.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Is H&S free to use?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            Yes! You can use our basic features for free. Premium plans unlock unlimited recommendations and discounts.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Can I buy outfits directly through H&S?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            Yes, you can shop curated looks directly from partnered Saudi retailers within the platform.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Does H&S work for all genders?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            Absolutely! H&S is designed to work for users of all genders and personal styles.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Can I upload my own clothing items?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            Yes, users can upload photos of their clothing so the AI can build accurate, wardrobe-based outfits.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Does H&S consider the weather for outfit suggestions?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            Yes, our AI factors in local weather forecasts to recommend appropriate seasonal clothing.
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-4 py-3 bg-[#E9BEBA] font-semibold flex justify-between items-center text-[#000000]">
+            Is my data safe with H&S?
+            <span class="transform transition-transform">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden px-4 py-3 bg-gray-50 text-sm text-gray-700">
+            We prioritize your privacy and use encryption to protect your personal and wardrobe data.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.querySelectorAll(".faq-toggle").forEach(button => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle("hidden");
+        const icon = button.querySelector("span");
+        icon.classList.toggle("rotate-180");
+      });
+    });
+  </script>
+
+<!-- Footer -->
+  <footer class="bg-[#2D2D2D] text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+    
+<!-- Brand -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">H&S StylistAI</h3>
+      <p class="text-gray-400">AI-powered fashion styling made for Saudi shoppers. Personalized, localized, effortless.</p>
+    </div>
+
+<!-- Contact Us -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+      <p class="text-gray-300">📧 Email: <a href="mailto:hsstylistai@gmail.com" class="hover:underline text-white">hsstylistai.com</a></p>
+      <p class="text-gray-300">📞 Phone: <a href="tel:+966 55 023 9903" class="hover:underline text-white">+966 55 023 9903</a></p>
+      <p class="text-gray-300">📍 Location: Riyadh, Saudi Arabia</p>
+    </div>
+
+<!-- Social Media -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+      <div class="flex space-x-4 mt-2 text-xl">
+        <a href="#" class="hover:text-[#FF0050]" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="hover:text-[#E1306C]" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="hover:text-[#0A66C2]" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-10 text-center text-xs text-gray-500">
+    &copy; 2025 H&S StylistAI. All rights reserved.
+  </div>
+</footer>
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  </footer>
+</body>
+</html>

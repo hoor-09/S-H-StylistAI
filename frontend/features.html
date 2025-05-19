@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features – H&S StylistAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#fbfbfb] text-[#fff]">
+
+<!-- Responsive Navbar -->
+  <header class="bg-[#7C2E3D] shadow-md p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-[#ffffff]">H&S StylistAI</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-[#989898]">Home</a>
+        <a href="how-it-works.html" class="hover:text-[#989898]">How It Works</a>
+        <a href="features.html" class="hover:text-[#989898]">Features</a>
+        <a href="partners.html" class="hover:text-[#989898]">Partners</a>
+        <a href="pricing.html" class="hover:text-[#989898]">Pricing</a>
+        <a href="about.html" class="hover:text-[#989898]">About</a>
+        <a href="app.html" class="hover:text-[#989898]">Get the App</a>
+        <a href="login.html" class="hover:text-[#989898]">Sign In</a> 
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-[#f9f8f8] text-2xl" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-4 hidden text-sm font-semibold">
+      <a href="/frontend/index.html" class="hover:text-[#989898]">Home</a> <br>
+      <a href="/frontend/how-it-works.html" class="hover:text-[#989898]">How It Works</a> <br>
+      <a href="/frontend/features.html" class="hover:text-[#989898]">Features</a> <br>
+      <a href="/frontend/partners.html" class="hover:text-[#989898]">Partners</a> <br>
+      <a href="/frontend/pricing.html" class="hover:text-[#989898]">Pricing</a> <br>
+      <a href="/frontend/about.html" class="hover:text-[#989898]">About</a> <br>
+      <a href="/frontend/roadmap.html" class="hover:text-[#989898]">Roadmap</a> <br>
+      <a href="/frontend/app.html" class="hover:text-[#989898]">Get the App</a> <br>
+      <a href="/frontend/login.html" class="hover:text-[#989898]">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Features Section -->
+  <section class="py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold text-[#2D2D2D] mb-4">Features</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+      All the tools you need for intelligent, culturally relevant styling.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      
+      <!-- Feature Card 1 -->
+      <div class="bg-[#ecebeb] rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#f0eae2]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ Personalized AI Styling</h4>
+        <p class="text-gray-700 text-sm">Smart algorithms that learn your taste and evolve with you.</p>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="bg-[#ecebeb] rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#888]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ Wardrobe-Based Suggestions</h4>
+        <p class="text-gray-700 text-sm">Outfits are built from what you already own and love.</p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="bg-white rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#f0eae2]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ Real-Time Local Availability</h4>
+        <p class="text-gray-700 text-sm">See what’s in stock from Saudi retailers — no surprises.</p>
+      </div>
+
+      <!-- Feature Card 4 -->
+      <div class="bg-white rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#f0eae2]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ VR/3D Try-On (Coming Soon)</h4>
+        <p class="text-gray-700 text-sm">Try on clothing in virtual mirrors using your phone camera.</p>
+      </div>
+
+      <!-- Feature Card 5 -->
+      <div class="bg-white rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#f0eae2]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ Price-Conscious Outfit Matching</h4>
+        <p class="text-gray-700 text-sm">Stylish recommendations that fit your budget goals.</p>
+      </div>
+
+      <!-- Feature Card 6 -->
+      <div class="bg-white rounded-xl shadow p-6 transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[#f0eae2]">
+        <h4 class="text-lg font-bold text-[#7C2E3D] mb-2">✓ Arabic/English Language Support</h4>
+        <p class="text-gray-700 text-sm">Bilingual UX designed for a Saudi-first user experience.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2D2D2D] text-white p-6 text-center">
+    <p>&copy; 2025 H&S StylistAI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partners – H&S StylistAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#F8F5F0] text-[#fff]">
+
+  <!-- Responsive Navbar -->
+  <header class="bg-[#7C2E3D] shadow-md p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-[#ffffff]">H&S StylistAI</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-[#989898]">Home</a>
+        <a href="how-it-works.html" class="hover:text-[#989898]">How It Works</a>
+        <a href="features.html" class="hover:text-[#989898]">Features</a>
+        <a href="partners.html" class="hover:text-[#989898]">Partners</a>
+        <a href="pricing.html" class="hover:text-[#989898]">Pricing</a>
+        <a href="about.html" class="hover:text-[#989898]">About</a>
+        <a href="app.html" class="hover:text-[#989898]">Get the App</a>
+        <a href="login.html" class="hover:text-[#989898]">Sign In</a> 
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-[#f9f8f8] text-2xl" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-4 hidden text-sm font-semibold">
+      <a href="/frontend/index.html" class="hover:text-[#989898]">Home</a> <br>
+      <a href="/frontend/how-it-works.html" class="hover:text-[#989898]">How It Works</a> <br>
+      <a href="/frontend/features.html" class="hover:text-[#989898]">Features</a> <br>
+      <a href="/frontend/partners.html" class="hover:text-[#989898]">Partners</a> <br>
+      <a href="/frontend/pricing.html" class="hover:text-[#989898]">Pricing</a> <br>
+      <a href="/frontend/about.html" class="hover:text-[#989898]">About</a> <br>
+      <a href="/frontend/roadmap.html" class="hover:text-[#989898]">Roadmap</a> <br>
+      <a href="/frontend/app.html" class="hover:text-[#989898]">Get the App</a> <br>
+      <a href="/frontend/login.html" class="hover:text-[#989898]">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Retailer Partners Section -->
+  <section class="py-16 px-4 bg-[#f0eae2]">
+    <div class="text-center mb-12">
+      <h3 class="text-2xl font-semibold text-[#2D2D2D]">Our Retailer Partners</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-2">
+        We proudly collaborate with top Saudi fashion brands to bring you the best local styles and exclusive collections.
+      </p>
+    </div>
+
+    <!-- Logo Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center items-center">
+      
+      <!-- Rubaiyat -->
+      <div class="flex flex-col items-center transition transform hover:scale-105">
+        <div class="w-28 h-28 bg-white rounded-lg shadow p-4 flex items-center justify-center">
+          <img src="/frontend/assets/logos/rubaiayat.jpeg alt="Rubaiyat Logo" class="object-contain h-full" />
+        </div>
+        <p class="mt-2 text-sm font-medium text-[#2D2D2D]">Rubaiyat</p>
+      </div>
+
+      <!-- Tamashee -->
+      <div class="flex flex-col items-center transition transform hover:scale-105">
+        <div class="w-28 h-28 bg-white rounded-lg shadow p-4 flex items-center justify-center">
+          <img src="/frontend/assets/logos/tamashee.png" alt="Tamashee Logo" class="object-contain h-full" />
+        </div>
+        <p class="mt-2 text-sm font-medium text-[#2D2D2D]">Tamashee</p>
+      </div>
+
+      <!-- Femi9 -->
+      <div class="flex flex-col items-center transition transform hover:scale-105">
+        <div class="w-28 h-28 bg-white rounded-lg shadow p-4 flex items-center justify-center">
+          <img src="/frontend/assets/logos/femi9.jpeg" alt="Femi9 Logo" class="object-contain h-full" />
+        </div>
+        <p class="mt-2 text-sm font-medium text-[#2D2D2D]">Femi9</p>
+      </div>
+
+      <!-- Lomar -->
+      <div class="flex flex-col items-center transition transform hover:scale-105">
+        <div class="w-28 h-28 bg-white rounded-lg shadow p-4 flex items-center justify-center">
+          <img src="/frontend/assets/logos/lomar.png" alt="Lomar Logo" class="object-contain h-full" />
+        </div>
+        <p class="mt-2 text-sm font-medium text-[#2D2D2D]">Lomar</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <a href="#" class="inline-block bg-[#7C2E3D] text-white py-3 px-6 rounded-2xl shadow hover:bg-[#5f1f2e] transition">
+        Become a Partner
+      </a>
+      <p class="mt-2 text-sm text-gray-600">Join our growing network of fashion retailers in Saudi Arabia.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2D2D2D] text-white py-6 text-center">
+    <p>&copy; 2025 H&S StylistAI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
